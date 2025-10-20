@@ -1,66 +1,73 @@
-🧠 Mini Quiz Generator
+<h1 align="center">🧠 Mini Quiz Generator</h1>
 
-A Flutter-based mobile app that generates multiple-choice quizzes using OpenAI’s API.
-Built while preparing for the AWS Cloud Practitioner certification, this app helps users test their knowledge interactively with AI-generated questions.
+<p align="center">
+  <em>A Flutter app that generates AI-powered multiple-choice quizzes using OpenAI — built while preparing for AWS Cloud Certification ☁️</em>
+</p>
 
-🚀 Overview
+---
 
-Mini Quiz Generator allows users to:
+### 📱 About the App
+**Mini Quiz Generator** is a mobile app built with **Flutter** that uses **OpenAI** to generate short, topic-based quizzes.  
+You can enter any topic (like *AWS EC2*, *IAM*, or *Data Science*), and the app creates **5 AI-generated MCQs** to test your understanding.
 
-Enter a topic (e.g., AWS EC2, S3, IAM, or general tech concepts).
+After answering all the questions, the app:
+- Displays your **score**
+- Shows which questions you got **wrong**
+- Reveals the **correct answers** (so you can learn and improve)
 
-Automatically generate 5 multiple-choice questions (MCQs) using OpenAI.
+---
 
-Select answers and get instant feedback.
+### ⚙️ Features
+- **AI-Powered Question Generation** — Uses OpenAI API to create new quizzes on any topic  
+- **5-100 MCQs per Quiz** — Quick sessions to test your knowledge  
+- **Topic Input Bar** — Enter *any topic* (tech, science, art, general knowledge) and get a custom quiz  
+- **Answer Explanations** — Learn from detailed reasoning for every question  
+- **Difficulty Levels** — Choose between *Easy*, *Medium*, and *Hard* quizzes 
+- **Local Storage** — Save quiz history with `shared_preferences`  
+- **Dark Mode & Custom Themes**  
+- **Export/Share Results** (planned feature with `pdf` and `share_plus`)
 
-View which questions were answered incorrectly along with the correct answers.
+---
 
-Review past quizzes anytime for continued learning.
+### 🧰 Tech Stack
 
-🧩 Features
+| Component | Technology |
+|------------|-------------|
+| **Framework** | Flutter |
+| **Language** | Dart |
+| **AI Engine** | OpenAI API |
+| **Local Storage** | shared_preferences |
+| **Extras (Planned)** | pdf, printing, share_plus |
+| **Platform Support** | Android & iOS |
 
-🧠 AI-Powered Quiz Creation – Generates quiz questions dynamically via OpenAI.
+---
 
-🎯 Instant Feedback – Highlights wrong answers and displays the correct ones.
+### 🚀 Getting Started
 
-💾 Quiz History – Stores past quizzes locally using shared_preferences.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/quiz_generator.git
+   cd quiz_generator
+2. Install dependencies:
+   ```bash
+   flutter pub get
+3. Add your OpenAI API key securely (e.g., .env or local config).
+4. Run the app:
+   ```bash
+   flutter run
 
-🌓 Dark Mode & Custom Themes – Smooth UI with built-in theme support.
+---
 
-📤 Export & Share – Share your quiz results or export them as PDF (coming soon).
+### Motivation
 
-🧰 Tech Stack
-Component	Description
-Framework	Flutter
-Language	Dart
-AI Engine	OpenAI API
-Local Storage	shared_preferences
-PDF & Sharing	pdf, printing, share_plus (planned features)
-Platform Support	Android & iOS
-🏗️ Setup Instructions
+I built this project while preparing for my AWS Cloud Practitioner Certification.
+I wanted a simple way to generate quizzes instantly on cloud concepts — and OpenAI made it possible to create endless practice questions and explanations in seconds.
 
-Clone this repository:
+---
 
-git clone https://github.com/yourusername/quiz_generator.git
-cd quiz_generator
+###🛠️ Future Improvements
 
-
-Install dependencies:
-
-flutter pub get
-
-
-Add your OpenAI API key in a .env or config file (if applicable).
-
-Run the app:
-
-flutter run
-
-📱 Screenshots (optional)
-
-Add screenshots of your main quiz screen, result summary, and history page.
-
-💡 Motivation
-
-This app was created while preparing for my AWS Cloud Certification.
-I wanted a way to practice concepts interactively, and using OpenAI allowed me to generate new quizzes on any topic instantly — making learning more engaging and personalized.
+- 🔔 Notifications for daily quiz reminders
+- 📊 Add quiz statistics and performance tracking
+- 🏆 Leaderboard for friendly challenges
+- 📤 Export and share results as PDFs
